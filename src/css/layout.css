@@ -1,0 +1,32 @@
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+
+}
+
+
+ul {
+    display: flex;
+    gap: 28px;
+}
+
+
+section {
+    width: 100vw;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1700px;
+    min-height: 600px;
+    
+}
+

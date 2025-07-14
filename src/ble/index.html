@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crescimento Central</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+      position: relative;
+    }
+
+    .grow-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      overflow: hidden;
+      background: lightblue;
+      width: 0;
+      animation: growFromCenter 2s ease forwards;
+      text-align: center;
+      padding: 10px 0; /* Altura do elemento */
+    }
+
+    @keyframes growFromCenter {
+      from {
+        width: 0;
+      }
+      to {
+        width: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="grow-center">Crescendo a partir do centro</h1>
+</body>
+</html>
