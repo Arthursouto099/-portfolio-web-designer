@@ -4,7 +4,12 @@
     border: 0;
     text-decoration: none;
     box-sizing: border-box;
+    
 }
 
+
+body {
+    overflow-x: hidden;
+}
 
 

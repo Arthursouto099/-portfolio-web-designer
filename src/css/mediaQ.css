@@ -1,0 +1,106 @@
+
+
+
+
+
+
+@media (max-width: 600px) {
+.primary-content {
+    flex-direction: column;
+
+    
+}
+
+
+
+main {
+    overflow-x: hidden;
+}
+
+.menu-mobile {
+    display: flex;
+
+}
+
+.w-nav{
+    display: none;
+}
+
+section {
+    margin-top: 0px;
+}
+
+.primary-text {
+    padding: 40px;
+}
+
+.primary-text  h1{
+    font-size: 65px;
+    line-height: 60px;
+    margin: 0px;
+    margin-bottom: 20px;
+    max-width: none;
+}
+
+.primary-text p {
+    margin: 0;
+    max-width: none;
+}
+
+
+.primary-text button {
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.shoes-content {
+   width: 340px;
+   height: 340px;
+   flex: 0;
+   margin: 0px;
+   padding: 20px;
+   margin: auto;
+  
+ 
+}
+
+
+
+
+
+.shoes img {
+    right: -40px;
+    width: 380px;
+    margin: auto;
+}
+
+.project-card {
+ 
+    flex-direction: column;
+    height: 800px;
+    
+ 
+}
+
+.project-card-active {
+  width: 90%;
+  margin: auto;
+}
+
+.project-img {
+    margin-top: 40px;
+}
+
+.project-img img {
+    border-radius: 20px;
+}
+
+.divide-bar {
+
+margin: 0px;
+margin: 25px 0px;
+  width: 100%;
+  height: 1px;
+}
+
+}
