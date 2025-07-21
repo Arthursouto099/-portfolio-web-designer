@@ -9,6 +9,13 @@ const myObserver = new  IntersectionObserver((entries, observer) => {
 
 
         card.forEach((item) => {
+            if(item.classList.contains("project-card-r")) {
+                item.classList.add("project-card-active-r")
+                return
+            }
+
+
+
             item.classList.add("project-card-active")
 
         })
@@ -16,8 +23,15 @@ const myObserver = new  IntersectionObserver((entries, observer) => {
 
      }
 
+
+
      else {
         card.forEach((item) => {
+            if(item.classList.contains("project-card-r")) {
+                item.classList.remove("project-card-active-r")
+                return
+            }
+
             item.classList.remove("project-card-active")
 
         })

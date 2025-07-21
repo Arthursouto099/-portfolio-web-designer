@@ -148,6 +148,7 @@ a {
     left: 0;
     position: absolute;
     animation: move-on 20s linear infinite;
+ 
 
 }
 
@@ -161,7 +162,7 @@ a {
 .project-card {
     width: 30px;
     /* //30px */
-
+    overflow-x: hidden;
     background-color: var(--bg-secondary);
     border-radius: 10px;
     padding: 26px;
@@ -199,6 +200,7 @@ a {
 
 .project-img {
     margin: 0px;
+
 }
 
 .project-img {
@@ -211,9 +213,138 @@ a {
 
 .project-img img {
     border-radius: 10px;
+    box-shadow: 10px 10px 15px #ffffff27; 
 }
 
 
 .divide-bar {
     margin: 25px; width: 2px ; background-color: #ffffff7a;
+}
+
+
+
+.project-area-2 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  
+}
+
+.project-card-r {
+    transform-origin: right; /* Origem da transformação no lado direito */
+    transform: scaleX(0);    /* Começa com escala 0 (invisível) */
+    animation:growWidth 4s ease forwards;;
+    
+
+   
+}
+
+
+
+
+.project-card-active-r {
+    animation: scaleFromRight 4s ease forwards;
+}
+
+@keyframes scaleFromRight {
+    from {
+        transform: scaleX(0);
+        width: 30px;
+      
+     
+    }
+    to {
+        transform: scaleX(1);
+        width: 90%;
+    }
+}
+
+/* 
+.shoes-comment-area {
+    display: flex;
+    
+} */
+
+
+.main-shoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.shoes-bar {
+    height: 1px ;
+    width: 100%;
+    background-color: var(--bg-secondary);
+}
+
+form {
+    margin-top: 50px;
+    background-color: var(--bg-secondary);
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 17px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form label {
+    color: #E0E0E0;
+}
+
+
+form div {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+form input  {
+    border-radius: 4px;
+    padding: 10px;
+}
+
+form textarea {
+    min-height: 200px;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.coments {
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 40px;
+    gap: 40px;
+    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-c {
+    min-height: 300px;
+    color: #E0E0E0;
+    background-color: var(--bg-secondary);
+    width: 500px;
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content-shoes .h1-text {
+    margin-top: 40px;
+    font-size: 70px;
+    line-height: 58px;
+    font-weight: bold;
 }
