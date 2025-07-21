@@ -171,7 +171,7 @@ a {
 }
 
 .project-card-active {
-    animation: growWidth 4s ease forwards;
+    animation: growWidth 2s ease forwards;
     animation-iteration-count: 1;
 }
 
@@ -234,7 +234,7 @@ a {
 .project-card-r {
     transform-origin: right; /* Origem da transformação no lado direito */
     transform: scaleX(0);    /* Começa com escala 0 (invisível) */
-    animation:growWidth 4s ease forwards;;
+    animation:growWidth 2s ease forwards;;
     
 
    
@@ -244,7 +244,7 @@ a {
 
 
 .project-card-active-r {
-    animation: scaleFromRight 4s ease forwards;
+    animation: scaleFromRight 2s ease forwards;
 }
 
 @keyframes scaleFromRight {
